@@ -1,4 +1,3 @@
-
 # 🏦 Smart Loan Approval System (SVM + Streamlit)
 
 A complete **Streamlit web application** that predicts whether a loan applicant will be **Approved (Eligible)** or **Rejected (Not Eligible)** using **Support Vector Machine (SVM)** classification.
@@ -70,80 +69,85 @@ Shows a short reasoning message explaining why approval/rejection happened.
 ---
 
 ## 📁 Project Structure
-## SVM/
-## ├── app.py
-## ├── requirements.txt
-## └── data/
-## └── raw/
-##  └── loan.csv
 
+SVM/
+├── app.py
+├── requirements.txt
+└── data/
+└── raw/
+└── loan.csv
+
+yaml
+Copy code
 
 ---
 
 ## ⚙️ Installation
 
 ### 1) Install Dependencies
-### pip install -r requirements.txt
+```bash
+pip install -r requirements.txt
+2) Run the Streamlit App
+If streamlit command is not working, run using:
 
-## ▶️ Run the Streamlit App
+bash
+Copy code
+python -m streamlit run app.py
+📌 Input Fields in App
+Users can enter:
 
-### If the `streamlit` command is not working, run using:
+Applicant Income (Number)
 
-### ```bash
-### python -m streamlit run app.py
+Loan Amount (Number)
 
-## 📌 Input Fields (User Inputs)
+Credit History (Yes/No)
 
-The application allows the user to enter the following applicant details:
+Employment Status (Yes/No)
 
-- **Applicant Income** (Number Input)
-- **Loan Amount** (Number Input)
-- **Credit History** (Yes / No)
-- **Employment Status (Self Employed)** (Yes / No)
-- **Property Area** (Urban / Semiurban / Rural)
+Property Area (Urban/Semiurban/Rural)
+
+📊 Output
+The app displays:
+
+✅ Loan Approved (Green highlight)
+❌ Loan Rejected (Red highlight)
+
+Also shows:
+
+Kernel used
+
+Model Test Accuracy
+
+Confidence Score (Probability)
+
+💡 Business Explanation
+The app provides a short explanation such as:
+
+“Based on good credit history and stable income pattern, the applicant is likely to repay the loan.”
+
+“Because the applicant has no credit history, the risk is higher and approval is less likely.”
+
+📦 Dependencies
+streamlit
+
+pandas
+
+numpy
+
+scikit-learn
+
+👩‍💻 Author
+Smart Loan Approval System - SVM Classifier Project
+
+yaml
+Copy code
 
 ---
 
-## 🎯 Model Selection
+If you want, I can also generate your **requirements.txt** based on your code and give you a **GitHub upload steps** for Streamlit deployment.
 
-The user can select the SVM kernel using a radio button:
 
-- **Linear SVM**
-- **Polynomial SVM**
-- **RBF SVM**
 
-This helps in understanding how different kernels affect prediction performance.
 
----
 
-## 🔘 Prediction Button
 
-Click the button below to generate the result:
-
-✅ **Check Loan Eligibility**
-
----
-
-## 📊 Output (Prediction Result)
-
-The application displays the result clearly as:
-
-✅ **Loan Approved** (Green Highlight)  
-❌ **Loan Rejected** (Red Highlight)
-
-It also shows additional information:
-
-- **Kernel Used**
-- **Model Test Accuracy**
-- **Confidence Score (Probability)** *(Optional)*
-
----
-
-## 💡 Business Explanation
-
-The app provides a short business-level explanation such as:
-
-- “Based on good credit history and stable income pattern, the applicant is likely to repay the loan.”
-- “Because the applicant has no credit history, the risk is higher and approval is less likely.”
-
-This helps users understand the reason behind approval or rejection.
