@@ -2,6 +2,8 @@
 
 A complete **Streamlit web application** that predicts whether a loan applicant will be **Approved (Eligible)** or **Rejected (Not Eligible)** using **Support Vector Machine (SVM)** classification.
 
+## https://sharvani1357-svm-app-1wsubv.streamlit.app/
+
 This project allows users to enter applicant details and get a real-time loan decision using different SVM kernels.
 
 ---
